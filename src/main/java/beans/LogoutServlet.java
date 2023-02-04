@@ -11,7 +11,7 @@ public class LogoutServlet extends HttpServlet{
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res)
 	{
-		HttpSession session=req.getSession();
+		HttpSession session=req.getSession(); //hi
 		session.invalidate();
 		try {
 			res.sendRedirect("http://localhost:8080/Classidor/pages/login.jsp");
